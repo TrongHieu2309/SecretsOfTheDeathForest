@@ -1,0 +1,6 @@
+- Khi Player block đúng hướng bị tấn công thì block thành công.
+- Khi Player block sai hướng bị tấn công thì block thất bại, bị gây sát thương.
+- Bắn ra một Raycast từ BlockPosition, nếu raycast đó va chạm với trigger AttackPosition của Enemy và player đang block (isBlocking == true).
+=> block thành công.
+- Nếu raycast đó không va chạm với trigger AttackPosition của Enemy và player đang block (isBlocking == true).
+=> block thất bại.
