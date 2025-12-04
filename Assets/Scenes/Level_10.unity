@@ -6884,7 +6884,7 @@ PlatformEffector2D:
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 1
-  m_SurfaceArc: 180
+  m_SurfaceArc: 120
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
@@ -10539,6 +10539,10 @@ MonoBehaviour:
   poisonImage: {fileID: 1944709449}
   skillImage: {fileID: 59124267}
   platformEffector2D: {fileID: 853207466}
+  playerHurt: {fileID: 8300000, guid: effe3234e50c62a41870552dfd86ec18, type: 3}
+  playerJump: {fileID: 8300000, guid: d0bc1e1c788f1684eadf96ea7def03ce, type: 3}
+  shieldSound: {fileID: 8300000, guid: 8eb8808680187d643ba8a5dc56eddddd, type: 3}
+  gameOverSound: {fileID: 8300000, guid: e9a2f7dc038113b40bd4cd97688e7dd5, type: 3}
   maxSkill: 4
   currentSkill: 0
   timerPoison: 0
@@ -11864,10 +11868,11 @@ MonoBehaviour:
   positionB: {fileID: 0}
   hpBar: {fileID: 599234239}
   attackDistanceEnemy: {x: 2.4, y: 3.5}
+  playerHurt: {fileID: 0}
   timer: 0
   damageValue: 0
   timerStun: 0
-  attack3Size: {x: 4, y: 2}
+  attack3Size: {x: 4.2, y: 2}
   attackPoint3: {fileID: 1771676030}
 --- !u!95 &1724676101
 Animator:

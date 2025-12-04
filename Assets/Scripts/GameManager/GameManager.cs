@@ -32,6 +32,24 @@ public class GameManager : MonoBehaviour
         isWinGame = false;
     }
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked; 
+        Cursor.visible = false;
+    }
+
+    private void OnApplicationFocus()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    private void OnApplicationQuit()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
     void Update()
     {
         if (isGameOver)

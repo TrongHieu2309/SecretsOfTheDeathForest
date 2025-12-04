@@ -41,7 +41,8 @@ public class PlayerController : Entity
     [SerializeField] private PlatformEffector2D platformEffector2D;
     [SerializeField] private AudioClip playerHurt;
     [SerializeField] private AudioClip playerJump;
-    [SerializeField] private AudioClip landingSound;
+    [SerializeField] private AudioClip shieldSound;
+    [SerializeField] private AudioClip gameOverSound;
     public float maxSkill;
     public float currentSkill;
     private float damageSkill = 1f;
@@ -71,6 +72,7 @@ public class PlayerController : Entity
     protected override void Update()
     {
         base.Update();
+        if (GameManager.instance.isGameOver || GameManager.instance.isPauseGame) return;
 
         if (blockTimer < blockCoolDown)
         {
@@ -91,19 +93,6 @@ public class PlayerController : Entity
         UpdateBlockedCoolDown();
         Poisoning();
         UpdatePoisonUI();
-    }
-
-    void LateUpdate()
-    {
-        bool isGrounded = OnGrounded();
-
-        if (isGrounded && !wasGrounded)
-        {
-            // Player vừa đáp đất
-            SoundManager.instance.PlaySound(landingSound);
-        }
-
-        wasGrounded = isGrounded; // Cập nhật trạng thái cho frame tiếp theo
     }
 
     protected override void Animations()
@@ -381,6 +370,8 @@ public class PlayerController : Entity
     private void SwordSound() => SoundManager.instance.PlaySound(sword);
     private void HurtSound() => SoundManager.instance.PlaySound(playerHurt);
     private void JumpSound() => SoundManager.instance.PlaySound(playerJump);
+    private void GameOverSound() => SoundManager.instance.PlaySound(gameOverSound);
+    private void BlockedSound() => SoundManager.instance.PlaySound(shieldSound);
     #endregion
 
     private void UpdateBlockedCoolDown()

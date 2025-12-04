@@ -12089,7 +12089,11 @@ MonoBehaviour:
   poison: {fileID: 1066002442}
   poisonImage: {fileID: 700507995}
   skillImage: {fileID: 551860017}
-  platformEffector2D: {fileID: 0}
+  platformEffector2D: {fileID: 1062195354}
+  playerHurt: {fileID: 8300000, guid: effe3234e50c62a41870552dfd86ec18, type: 3}
+  playerJump: {fileID: 8300000, guid: d0bc1e1c788f1684eadf96ea7def03ce, type: 3}
+  shieldSound: {fileID: 8300000, guid: 8eb8808680187d643ba8a5dc56eddddd, type: 3}
+  gameOverSound: {fileID: 8300000, guid: e9a2f7dc038113b40bd4cd97688e7dd5, type: 3}
   maxSkill: 4
   currentSkill: 0
   timerPoison: 0

@@ -6782,8 +6782,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1462643276}
-  - {fileID: 1722959267}
-  - {fileID: 1311136298}
   - {fileID: 1939016556}
   - {fileID: 379582316}
   m_Father: {fileID: 1902070945}
@@ -6912,11 +6910,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311136297}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -9862.998}
-  m_LocalScale: {x: 1.0000799, y: 1.0000799, z: 1.0000799}
+  m_LocalPosition: {x: 0, y: 0, z: 0.001953125}
+  m_LocalScale: {x: 1.0000798, y: 1.0000798, z: 1.0000798}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1283661693}
+  m_Father: {fileID: 1462643276}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8075,6 +8073,8 @@ RectTransform:
   - {fileID: 1890168924}
   - {fileID: 2040872605}
   - {fileID: 757167870}
+  - {fileID: 1722959267}
+  - {fileID: 1311136298}
   m_Father: {fileID: 1283661693}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -8594,11 +8594,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722959266}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -9862.998}
-  m_LocalScale: {x: 1.0000799, y: 1.0000799, z: 1.0000799}
+  m_LocalPosition: {x: 0, y: 0, z: 0.001953125}
+  m_LocalScale: {x: 1.0000798, y: 1.0000798, z: 1.0000798}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1283661693}
+  m_Father: {fileID: 1462643276}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17828,7 +17828,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2051871555
 Transform:
   m_ObjectHideFlags: 0
@@ -18136,8 +18136,12 @@ MonoBehaviour:
   poison: {fileID: 757167869}
   poisonImage: {fileID: 1869985391}
   skillImage: {fileID: 164502879}
-  platformEffector2D: {fileID: 0}
+  platformEffector2D: {fileID: 1085227596}
   playerHurt: {fileID: 8300000, guid: effe3234e50c62a41870552dfd86ec18, type: 3}
+  playerJump: {fileID: 8300000, guid: d0bc1e1c788f1684eadf96ea7def03ce, type: 3}
+  landingSound: {fileID: 8300000, guid: a08fc52bece804f41b1e9cda9834e571, type: 3}
+  shieldSound: {fileID: 8300000, guid: 8eb8808680187d643ba8a5dc56eddddd, type: 3}
+  gameOverSound: {fileID: 8300000, guid: e9a2f7dc038113b40bd4cd97688e7dd5, type: 3}
   maxSkill: 4
   currentSkill: 0
   timerPoison: 0

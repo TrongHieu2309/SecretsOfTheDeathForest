@@ -9027,7 +9027,7 @@ MonoBehaviour:
   isFacingRight: 1
   wallSlideSpeed: 0
   wallJumpForce: 17
-  wallJumpHorizontalForce: 6
+  wallJumpHorizontalForce: 12
   wallJumpDuration: 0.2
   blockedCoolDown: {fileID: 131600300}
   animShieldCooldown: {fileID: 1945224690}
@@ -9037,8 +9037,11 @@ MonoBehaviour:
   poison: {fileID: 1947753363}
   poisonImage: {fileID: 1944709449}
   skillImage: {fileID: 59124267}
-  platformEffector2D: {fileID: 0}
-  playerHurt: {fileID: 0}
+  platformEffector2D: {fileID: 853207466}
+  playerHurt: {fileID: 8300000, guid: effe3234e50c62a41870552dfd86ec18, type: 3}
+  playerJump: {fileID: 8300000, guid: d0bc1e1c788f1684eadf96ea7def03ce, type: 3}
+  shieldSound: {fileID: 8300000, guid: 8eb8808680187d643ba8a5dc56eddddd, type: 3}
+  gameOverSound: {fileID: 8300000, guid: e9a2f7dc038113b40bd4cd97688e7dd5, type: 3}
   maxSkill: 4
   currentSkill: 0
   timerPoison: 0
@@ -14032,30 +14035,30 @@ Tilemap:
   m_TileMatrixArray:
   - m_RefCount: 0
     m_Data:
-      e00: 2.35e-43
+      e00: 1e-45
       e01: 0
       e02: 1e-45
-      e03: -4.75161
+      e03: 1.3959825e-38
       e10: 0
       e11: 0
       e12: 0
-      e13: 6.95e-43
-      e20: 6.7027025e+31
-      e21: -4.75161
-      e22: 2.7376998e-29
-      e23: 1.9076213e-27
-      e30: 4.5916e-41
-      e31: 6.95e-43
-      e32: 6.99e-43
-      e33: 6.96e-43
+      e13: 1.006e-42
+      e20: -4.999614e+33
+      e21: 1.3959825e-38
+      e22: -4.423686e-39
+      e23: -2.2494618e-19
+      e30: 4.5911e-41
+      e31: 1.006e-42
+      e32: 1.009e-42
+      e33: 1.006e-42
   m_TileColorArray:
   - m_RefCount: 0
-    m_Data: {r: 2.96052e-40, g: 2.96052e-40, b: 2.96052e-40, a: 2.96052e-40}
+    m_Data: {r: 3.02807e-40, g: 3.02807e-40, b: 3.02807e-40, a: 3.02807e-40}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -18, y: -12, z: 0}
-  m_Size: {x: 95, y: 26, z: 1}
+  m_Size: {x: 95, y: 52, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
